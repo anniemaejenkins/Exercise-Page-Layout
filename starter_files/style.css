@@ -92,38 +92,46 @@ section > h1 h2 h3{
 }
 
 #sidebar_content{
-  background-color: #ffffdd;
   border-radius: 5px;
-  padding: 20px;
 }
 
-section{
-  margin: 20px;
+#sidebar_content div{
+  background-color: #ffffdd;
+  padding: 40px;
+  margin-top: 20px;
 }
 
 
 footer{
   background-color: rgb(254, 220, 173);
   text-align: center;
-  margin: 20px;
   padding: 30px 18px;
+  margin-top: 20px;
 }
 
 #site_footer a{
   display: inline;
-  margin: 12px;
+  margin: 10px;
 }
 
 
 /*tablet scale*/
 @media ( min-width: 600px ){
-  .main_nav a{
-    display: inline;
+  #main_nav{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #main_nav a{
+    width: 35%;
+    margin-right: 10px;
   }
   #sidebar_content{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    background-color: #ffffdd;
+    margin-top: 20px;
   }
 }
 
